@@ -113,7 +113,8 @@ h2::after {
 }
 
 #infodiv {
-    max-width: 500px;
+    width: 500px;
+    max-width: 90%;
 }
 
 #infodiv h2 {
@@ -140,7 +141,7 @@ h2::after {
 }
 
 .cards {
-    background-color: var(--bg-secondary); /* Fundo azul escuro para os cards */
+    background-color: var(--bg-secondary);
     padding: 30px;
     width: 250px;
     border-radius: 15px;
@@ -149,22 +150,19 @@ h2::after {
     align-items: center;
     justify-content: center;
     gap: 15px;
-    border: 1px solid transparent; /* Borda transparente inicial */
+    border: 1px solid transparent;
     transition: all 0.4s ease;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 }
 
-/* Efeito ao passar o mouse nos cards */
 .cards:hover {
     border-color: var(--accent-blue);
-    transform: translateY(-10px); /* Move o card ligeiramente para cima */
-    box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3); /* Sombra azul brilhante */
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
 }
 
 .cardsicon {
     height: 80px;
     width: auto;
-    /* Opcional: Filtro para deixar os ícones ligeiramente azulados/brilhantes */
     filter: drop-shadow(0 0 5px rgba(59, 130, 246, 0.5));
 }
 
@@ -172,13 +170,13 @@ h2::after {
     color: var(--text-primary);
 }
 
-/* --- Seção Contato --- */
 #contact {
     background-color: var(--bg-secondary);
     border-radius: 20px;
     margin-bottom: 40px;
     padding: 40px;
-    max-width: 800px;
+    width: 800px;
+    max-width: 80%;
 }
 
 .contact-container {
@@ -201,13 +199,14 @@ h2::after {
 }
 
 .contact-item:hover {
-        transform: translateX(10px);
-        background-color: rgba(59, 130, 246, 0.1);
+    transform: translateX(10px);
+    background-color: rgba(59, 130, 246, 0.1);
 }
 
 .contact-icon {
     width: 40px;
     height: 40px;
+    filter: drop-shadow(0 0 5px rgba(59, 130, 246, 0.5));
 }
 
 .contact-link {
@@ -221,7 +220,7 @@ h2::after {
 }
 
 /* Responsividade básica para celulares */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     nav {
         flex-wrap: wrap;
         justify-content: center;
@@ -232,4 +231,10 @@ h2::after {
     }
     #infodiv h2 { text-align: center; }
     #infodiv h2::after { margin: 10px auto 0; }
+
+    #contact {
+        margin-bottom: 0;
+        max-width: 100%;
+        border-radius: 0;
+    }
 }
