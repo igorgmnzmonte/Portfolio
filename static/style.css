@@ -48,6 +48,10 @@ h1 {
     letter-spacing: 2px;
 }
 
+strong {
+    color: #3b82f6;
+}
+
 nav {
     display: flex;
     gap: 20px;
