@@ -5,15 +5,15 @@
 }
 
 :root {
-    --bg-main: #0a0a0a;       /* Preto profundo para o fundo principal */
-    --bg-secondary: #0f172a;  /* Azul noturno para seções e cards */
-    --accent-blue: #3b82f6;   /* Azul elétrico vibrante para destaques */
-    --text-primary: #ffffff;  /* Branco para texto principal */
-    --text-secondary: #b3b3b3; /* Cinza claro para textos secundários */
+    --bg-main: #0a0a0a;
+    --bg-secondary: #0f172a; 
+    --accent-blue: #3b82f6;
+    --text-primary: #ffffff; 
+    --text-secondary: #b3b3b3;
 }
 
 html {
-    scroll-behavior: smooth; /* Rolagem suave ao clicar nos links */
+    scroll-behavior: smooth;
 }
 
 body {
@@ -25,12 +25,11 @@ body {
     line-height: 1.6;
 }
 
-/* --- Cabeçalho e Navegação --- */
 header {
     background-color: var(--bg-secondary);
     padding: 20px 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-    position: sticky; /* Mantém o menu no topo */
+    position: sticky;
     top: 0;
     z-index: 100;
 }
@@ -49,6 +48,10 @@ h1 {
     letter-spacing: 2px;
 }
 
+strong {
+    color: #3b82f6;
+}
+
 nav {
     display: flex;
     gap: 20px;
@@ -65,10 +68,9 @@ nav a {
 
 nav a:hover {
     color: var(--accent-blue);
-    background-color: rgba(59, 130, 246, 0.1); /* Azul translúcido no hover */
+    background-color: rgba(59, 130, 246, 0.1);
 }
 
-/* --- Seções Gerais --- */
 section {
     padding: 60px 20px;
     max-width: 1200px;
@@ -83,7 +85,6 @@ h2 {
     position: relative;
 }
 
-/* Pequena linha azul abaixo dos títulos H2 */
 h2::after {
     content: '';
     display: block;
@@ -93,20 +94,18 @@ h2::after {
     margin: 10px auto 0;
 }
 
-/* --- Seção "Quem sou eu" --- */
 #info {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 40px;
-    flex-wrap: wrap; /* Permite quebrar linha em telas menores */
+    flex-wrap: wrap;
 }
 
 .profile-photo {
     width: 250px;
     height: 250px;
     object-fit: cover;
-    /* Foto circular com borda brilhante azul */
     border-radius: 50%;
     border: 3px solid var(--accent-blue);
     box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
@@ -121,16 +120,15 @@ h2::after {
     text-align: left;
     margin-bottom: 20px;
 }
-#infodiv h2::after { margin: 10px 0 0; } /* Alinha a linha decorativa à esquerda */
+#infodiv h2::after { margin: 10px 0 0; }
 
 #infodiv p {
     color: var(--text-secondary);
     font-size: 1.1rem;
 }
 
-/* --- Seção Competências --- */
 #competencias {
-    background-color: var(--bg-main); /* Mantém o fundo preto */
+    background-color: var(--bg-main);
 }
 
 #cardsdiv {
@@ -219,7 +217,6 @@ h2::after {
         color: var(--accent-blue);
 }
 
-/* Responsividade básica para celulares */
 @media (max-width: 600px) {
     nav {
         flex-wrap: wrap;
