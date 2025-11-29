@@ -72,7 +72,7 @@ nav a:hover {
 }
 
 section {
-    padding: 30px 20px;
+    padding-top: 60px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -80,7 +80,7 @@ section {
 h2 {
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     color: var(--accent-blue);
     position: relative;
 }
@@ -91,7 +91,7 @@ section h2::after {
     width: 60px;
     height: 3px;
     background-color: var(--accent-blue);
-    margin: 10px auto 0;
+    margin: 10px auto 30px;
 }
 
 #info {
@@ -120,7 +120,10 @@ section h2::after {
     text-align: left;
     margin-bottom: 20px;
 }
-#infodiv h2::after { margin: 10px 0 0; }
+
+#infodiv h2::after {
+    margin: 10px 0 0;
+}
 
 #infodiv p {
     color: var(--text-secondary);
@@ -171,8 +174,8 @@ section h2::after {
 .projetos-flex {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    padding: 20px 0;
+    gap: 40px;
+    padding-bottom: 60px;
     margin: auto;
     width: 800px;
     max-width: 96%;
@@ -197,6 +200,15 @@ section h2::after {
     background-size: cover;
     background-position: center;
     border-bottom: 2px solid var(--accent-blue);
+}
+
+.em-breve {
+    height: 180px;
+    width: 100%;
+    background-size: 300px;
+    background-position: center;
+    border-bottom: 2px solid var(--accent-blue);
+    filter: drop-shadow(0 0 3px rgba(59, 130, 246, 0.5));
 }
 
 .projeto-info {
