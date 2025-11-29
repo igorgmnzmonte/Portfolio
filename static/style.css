@@ -302,7 +302,8 @@ footer h2{
 
 @media (max-width: 600px) {
     nav {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     #info {
