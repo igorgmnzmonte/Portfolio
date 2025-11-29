@@ -267,23 +267,6 @@ footer h2{
     gap: 25px;
 }
 
-.contact-item {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    background-color: rgba(0,0,0,0.2);
-    padding: 15px 25px;
-    border-radius: 10px;
-    width: 100%;
-    max-width: 200px;
-    transition: transform 0.3s ease;
-}
-
-.contact-item:hover {
-    transform: translatey(-7px);
-    background-color: rgba(59, 130, 246, 0.1);
-}
-
 .contact-icon {
     width: 40px;
     height: 40px;
@@ -341,7 +324,7 @@ footer h2{
          margin: 10px auto 0;
     }
     
-    .contact-item:hover {
+    .contact-link:hover {
         transform: translatex(10px);
     }
 
