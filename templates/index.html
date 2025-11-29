@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/style.css">
     <link rel="icon" href="../icon/laptop.svg" type="image/svg">
-    <title>portfolio</title>
+    <title>Meu portfolio</title>
 </head>
 <body>
     <header id="cabeçalho">
         <div>
             <h1>Portfólio</h1>
             <nav>
-                <a href="#info">Informações</a>
+                <a href="#info">Introdução</a>
                 <a href="#competencias">Competências</a>
+                <a href="#projetos">Projetos</a>
                 <a href="#contact">Contato</a>
             </nav>
         </div>
@@ -23,7 +24,7 @@
         <img src="../images/eu.png" alt="Minha foto de perfil" class="profile-photo">
         <div id="infodiv">
             <h2>Quem sou eu?</h2>
-            <p>Olá! Sou um desenvolvedor graduando de <strong>Engenharia de Software</strong> e apaixonado por tecnologia, focado em criar soluções web modernas e eficientes. Com experiência em front-end e back-end, busco sempre aprender novas tecnologias e aprimorar minhas habilidades para entregar projetos de alta qualidade que unem design atraente e funcionalidade robusta.</p>
+            <p>Olá! Sou um desenvolvedor graduando em <strong>Engenharia de Software</strong> e apaixonado por tecnologia, focado em criar soluções web modernas e eficientes. Com experiência em front-end e back-end, busco sempre aprender novas tecnologias e aprimorar minhas habilidades para entregar projetos de alta qualidade que unem design atraente e funcionalidade robusta.</p>
         </div>
     </section>
 
@@ -44,23 +45,45 @@
             </div>
         </div>
     </section>
+    <section id="projetos">
+        <h2>Meus Projetos</h2>
+        <div class="projetos-flex">
+            <div class="projeto-card">
+                <div class="projeto-img" style="background-image: url('../images/pythonbanner.png');"></div> 
+                <div class="projeto-info">
+                    <h3>Linguagem python</h3>
+                    <p>Fórmulas e conceitos matemáticos aplicados puramente à linguagem python (E também algumas questões de olimpíadas nacionais).</p>
+                    <div class="projeto-links">
+                        <a href="https://github.com/Igorgmnz/python" target="_blank">Acesse aqui</a>
+                    </div>
+                </div>
+            </div>
 
-    <section id="contact">
-        <h2>Entre em contato</h2>
-        <div class="contact-container">
-             <div class="contact-item">
-                <img src="../images/insta.svg" alt="Logo Instagram" class="contact-icon">
-                <a href="https://www.instagram.com/igorgmnz" target="_blank" class="contact-link">igorgmnz</a>
-            </div>
-            <div class="contact-item">
-                <img src="../images/whats.svg" alt="Logo WhatsApp" class="contact-icon">
-                <p>(83) 99619-3509</p>
-            </div>
-            <div class="contact-item">
-                <img src="../images/email.svg" alt="Logo Email" class="contact-icon">
-                <a href="mailto:igorgmnzmonte@gmail.com" class="contact-link">igorgmnzmonte@gmail.com</a>
+            <div class="projeto-card">
+                <div class="em-breve" style="background-image: url('../images/loading.gif')"></div>
+                <div class="projeto-info">
+                    <h3>Em Breve</h3>
+                    <p>Estou desenvolvendo novos projetos incríveis. Aguarde novidades!</p>
+                </div>
             </div>
         </div>
     </section>
+    <footer id="contact">
+        <h2>Mais Informações</h2>
+        <div class="contact-container">
+            <div class="contact-item">
+                <img src="../images/linkedin.svg" alt="Logo Linkedin" class="contact-icon">
+                <a href="https://www.linkedin.com/in/igor-andre-gimenez-de-oliveira-monte-811134398/" target="_blank" class="contact-link">Linkedin</a>
+            </div>
+            <div class="contact-item">
+                <img src="../images/github.svg" alt="Logo GitHub" class="contact-icon">
+                <a href="https://github.com/igorgmnzmonte" class="contact-link">GitHub</a>
+            </div>
+            <div class="contact-item">
+                <img src="../images/email.svg" alt="Logo Email" class="contact-icon">
+                <a href="mailto:igorgmnzmonte@gmail.com" class="contact-link">Email</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
