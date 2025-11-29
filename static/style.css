@@ -296,6 +296,28 @@ footer h2{
     font-size: 1.1rem;
     transition: color 0.3s;
 }
+
+.contact-link {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: rgba(0,0,0,0.2);
+    padding: 15px 25px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.contact-link:hover {
+    transform: translatey(-7px);
+    background-color: rgba(59, 130, 246, 0.1);
+    color: #3b82f6;
+}
+
 .contact-link:hover {
     color: var(--accent-blue);
 }
